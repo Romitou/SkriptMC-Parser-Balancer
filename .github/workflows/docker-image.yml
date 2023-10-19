@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 🔧 Setup Go 1.17
         uses: actions/setup-go@v3
         with:
@@ -28,7 +28,7 @@ jobs:
     if: github.ref != 'refs/heads/main'
     steps:
       - name: ⬇️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 🐋 Build Docker image
         run: docker build -t ghcr.io/romitou/skmc-parser:latest .
   push-image:
@@ -40,7 +40,7 @@ jobs:
       contents: read
     steps:
       - name: ⬇️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 🐋 Build Docker image
         run: docker build -t ghcr.io/romitou/skmc-parser:latest .
       - name: 🔐 Log in to registry
