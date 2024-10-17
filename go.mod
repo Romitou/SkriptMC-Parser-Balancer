@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/docker/docker v20.10.27+incompatible
 	github.com/gin-gonic/gin v1.9.0
-	github.com/go-redis/redis/v8 v8.11.5
+	github.com/go-redis/redis/v9 v9.7.0
 	github.com/mileusna/crontab v1.2.0
 	github.com/spf13/viper v1.16.0
 	github.com/ulule/limiter/v3 v3.10.0
